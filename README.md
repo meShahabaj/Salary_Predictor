@@ -121,6 +121,6 @@ salary-predictor/
 
 ## 👤 Author
 
-**Your Name**
+**Shahabaj Khan**
 📧 [shahabaj773@gmail.com]
 🌐 [LinkedIn](https://www.linkedin.com/in/shahabaj-khan-b05388225/)
