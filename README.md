@@ -31,7 +31,7 @@ A simple and interactive **Machine Learning web application** built with **Strea
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/salary-predictor.git
+git clone https://github.com/meShahabaj/Salary_Predictor.git
 cd salary-predictor
 ```
 
@@ -40,16 +40,14 @@ cd salary-predictor
 #### Using **uv**:
 
 ```bash
-uv add streamlit catboost pandas numpy
+uv add streamlit catboost
 ```
 
 #### Or using **pip**:
 
 ```bash
-pip install -r requirements.txt
+pip install streamlit catboost
 ```
-
-*(If you don’t have `requirements.txt`, create one with the above libraries.)*
 
 ---
 
@@ -57,16 +55,7 @@ pip install -r requirements.txt
 
 Make sure your trained model file `salary_predictor.cbm` is present in the project root folder.
 
-If you don’t have it yet, train and export a model in Python like this:
-
-```python
-from catboost import CatBoostRegressor
-
-model = CatBoostRegressor()
-model.fit(X_train, y_train, cat_features=[2,3,4])
-model.save_model("salary_predictor.cbm")
-```
-
+If you don’t have it yet, train and export a model using given notebook on kaggle:
 ---
 
 ## ▶️ Run the App
@@ -74,7 +63,7 @@ model.save_model("salary_predictor.cbm")
 Run this command in your terminal:
 
 ```bash
-streamlit run main.py
+uv run streamlit run main.py
 ```
 
 Then open the provided local URL (like `http://localhost:8501`) in your browser.
@@ -104,7 +93,7 @@ Gender: Male
 Education: Master's  
 Job Title: Data Scientist  
 
-💼 Predicted Salary: ₹12,40,000 / year
+💼 Predicted Salary: ₹1,40,000 / Month
 ```
 
 ---
@@ -114,11 +103,10 @@ Job Title: Data Scientist
 ```
 salary-predictor/
 │
-├── main.py                  # Streamlit app
-├── salary_predictor.cbm     # Trained CatBoost model
-├── requirements.txt          # Dependencies
-├── README.md                # Project documentation
-└── data/                    # (Optional) Dataset for training
+├── main.py                                 # Streamlit app
+├── salary_predictor.cbm                    # Trained CatBoost model
+├── README.md                               # Project documentation
+└── Kaggle_training_notebook.ipynb          # notebook for training
 ```
 
 ---
@@ -134,9 +122,5 @@ salary-predictor/
 ## 👤 Author
 
 **Your Name**
-📧 [your.email@example.com](mailto:your.email@example.com)
-🌐 [LinkedIn](https://www.linkedin.com/in/your-profile) | [GitHub](https://github.com/your-username)
-
----
-
-Would you like me to tailor the README specifically for **Streamlit Cloud deployment** (including dataset and model upload instructions)?
+📧 [shahabaj773@gmail.com]
+🌐 [LinkedIn](https://www.linkedin.com/in/shahabaj-khan-b05388225/)
